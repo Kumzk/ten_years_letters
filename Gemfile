@@ -52,3 +52,22 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+# pry
+gem 'pry-rails'
+
+# enum
+gem 'i18n'
+gem 'enum_help'
+
+# user model
+gem 'devise'
+
+# search
+gem 'ransack'
+
+#output the ER  diagram
+gem 'rails-erd'
+
+#looking letter content
+gem 'letter_opener_web'
