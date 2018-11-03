@@ -37,7 +37,9 @@ class MessagesController < ApplicationController
       :content,
       :image,
       :user_id,
-      :type_id
+      :type_id,
+      :answer1,
+      :answer2
     )
   end
 
