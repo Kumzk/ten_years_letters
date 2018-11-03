@@ -7,3 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 # userstable seeds
  User.create( email: 'test@gmail.com', password: '111111' ,name: 'test', birthday: '2000-01-01', status: 0 )
+
+ Question.create(comtent: 'aaaaaaaaaaaaaa')
+ Question.create(comtent: 'bbbbbbbbbbbbbb')
+ Question.create(comtent: 'cccccccccccccc')

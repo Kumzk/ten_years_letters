@@ -14,8 +14,6 @@ class Init < ActiveRecord::Migration[5.1]
 
   create_table :questions do |t|
     t.string :content, null: false
-    t.integer :type, null: false
-
     t.timestamps
   end
 end
