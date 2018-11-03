@@ -75,3 +75,7 @@ gem 'rails-erd'
 
 #looking letter content
 gem 'letter_opener_web'
+
+# bootstrap4
+gem 'bootstrap'
+gem 'jquery-rails'
