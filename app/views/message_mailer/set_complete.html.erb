@@ -1,10 +1,4 @@
-<h3>メールのセッティングが完了しました</h3>
-<p>
-＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝<br />
-・・・<%= link_to'メッセージを開く', "http://localhost:3000//messages/#{@message.id}" %><br />
-質問１・・・<%= @message.question.content %><br />
-その答え・・・<%= @message.answer1 %><br />
-〜メッセージ内容〜<br />
-<%= @message.answer2 %><br />
-＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝<br />
-</p>
+<%= "#{@message.user.name}さんからのメッセージが届きました。" %><br />
+あなたの今日１日がもっと素敵な日になるでしょう。<br />
+<%= "下のURLをクリックして、#{@message.user.name}さんからのメッセージを受け取りましょう。" %><br />
+<%= link_to'メッセージを開く', "http://localhost:3000//messages/#{@message.id}" %><br />

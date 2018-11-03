@@ -1,7 +1,7 @@
 class MessageMailer < ApplicationMailer
   def set_complete(message)
     @message = message
-    mail(to: @message.email, subject: "メールのセッティングが完了しました")
+    mail(to: @message.email, subject: "#{@message.when_message}からのメッセージです")
   end
 
   # def
