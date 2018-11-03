@@ -20,6 +20,9 @@
   background-position: center center;
   background-size: cover;
   background-image: url(/assets/login.jpg);
+  background-repeat: no-repeat;
+  height: 100%;
+  margin: 0;
 }
 
 /* Form Layout */
@@ -99,10 +102,4 @@ form {
 
 .form-footer a:hover {
   border-bottom: 1px dotted #8c8c8c;
-}
-.button-panel{
-  background-color: #2EA59F;
-}
-.button{
-  background-color: #2EA59F;
 }
