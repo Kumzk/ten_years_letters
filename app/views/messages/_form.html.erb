@@ -14,18 +14,18 @@
   </div>
 
   <div class="field">
-    <%= f.label 'メッセージのタイプは？' %><br />
-    <%= f.collection_select(:type_id, Type.all, :id, :name, :prompt => "タイプを選択してください") %>
+    <%= f.label '質問項目' %><br />
+    <%= f.collection_select(:question_id, Question.all, :id, :content, :prompt => "質問を選択してください") %>
   </div>
 
   <div class="field">
-    <%= f.label '書き手' %><br />
-    <%= f.text_field :sender_name, autofocus: true %>
+    <%= f.label 'kotae ' %><br />
+    <%= f.text_area :answer1, autofocus: true, rows: 5 %>
   </div>
 
   <div class="field">
     <%= f.label '内容' %><br />
-    <%= f.text_area :content, autofocus: true, rows: 5 %>
+    <%= f.text_area :answer2, autofocus: true, rows: 5 %>
   </div>
   <%= f.submit%>
 <% end %>

@@ -13,20 +13,21 @@
 ActiveRecord::Schema.define(version: 20181102231149) do
 
   create_table "messages", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.text "email", null: false
     t.string "image", null: false
     t.date "when_message", null: false
-    t.string "sender_name", null: false
     t.integer "status", default: 1, null: false
-    t.text "content", null: false
-    t.integer "type_id", null: false
+    t.text "answer1", null: false
+    t.text "answer2", null: false
+    t.integer "question_id", null: false
     t.integer "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "types", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.text "url", null: false
-    t.string "name", null: false
+  create_table "questions", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string "content", null: false
+    t.integer "type", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
