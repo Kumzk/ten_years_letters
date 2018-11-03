@@ -14,7 +14,6 @@ class MessagesController < ApplicationController
   end
 
   def new
-    @user = current_user
     @message = Message.new
   end
 
@@ -32,14 +31,15 @@ class MessagesController < ApplicationController
   private
   def message_params
     params.require(:message).permit(
+      :email,
       :when_message,
       :sender_name,
       :content,
       :image,
       :user_id,
-      :type_id,
       :answer1,
-      :answer2
+      :answer2,
+      :question_id
     )
   end
 
