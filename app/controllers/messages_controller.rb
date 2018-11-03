@@ -1,4 +1,18 @@
 class MessagesController < ApplicationController
+  before_action :set_messages
+
+  def show
+  end
+
+  def edit
+  end
+
+  def delete
+  end
+
+  def update
+  end
+
   def new
     @user = current_user
     @message = Message.new
@@ -23,5 +37,9 @@ class MessagesController < ApplicationController
       :content,
       :user_id,
     )
+  end
+
+  def set_messages
+    @message = Message.find(params[:id])
   end
 end
