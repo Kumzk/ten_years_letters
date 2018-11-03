@@ -1,4 +1,4 @@
-#{@message.user}さんからのメッセージが届きました。
-あなたの今日１日がもっと素敵な日になるでしょう。
-下のURLをクリックして、#{@message.user}さんからのメッセージを受け取りましょう。
-<%= link_to'メッセージを開く', "http://localhost:3000//messages/#{@message.id}" %>
+<%= "#{@message.user.name}さんからのメッセージが届きました。" %><br />
+あなたの今日１日がもっと素敵な日になるでしょう。<br />
+<%= "下のURLをクリックして、#{@message.user.name}さんからのメッセージを受け取りましょう。" %><br />
+<%= link_to'メッセージを開く', "http://localhost:3000//messages/#{@message.id}" %><br />
