@@ -56,6 +56,10 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # pry
 gem 'pry-rails'
 
+# image uploader
+gem 'carrierwave', '~> 1.1'
+gem 'mini_magick'
+
 # enum
 gem 'i18n'
 gem 'enum_help'

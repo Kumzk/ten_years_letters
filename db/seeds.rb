@@ -7,7 +7,3 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 # userstable seeds
  User.create( email: 'test@gmail.com', password: '111111' ,name: 'test', birthday: '2000-01-01', status: 0 )
- #typetableseeds
- Type.create(id: 1, name: '誕生日', url: '')
- Type.create(id: 2, name: '記念日', url: '')
- Type.create(id: 3, name: '思い出のひ', url: '')
