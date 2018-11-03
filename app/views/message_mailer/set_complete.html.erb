@@ -1,7 +1,7 @@
 <h3>メールのセッティングが完了しました</h3>
 <p>
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝<br />
-送信日・・・<%= @message.when_message %><br />
+・・・<%= link_to'メッセージを開く', "http://localhost:3000//messages/#{@message.id}" %><br />
 質問１・・・<%= @message.question.content %><br />
 その答え・・・<%= @message.answer1 %><br />
 〜メッセージ内容〜<br />

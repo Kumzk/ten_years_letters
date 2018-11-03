@@ -2,6 +2,7 @@ class MessagesController < ApplicationController
   # before_action :set_messages
 
   def show
+    @message = Message.find(params[:id])
   end
 
   def edit
