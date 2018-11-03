@@ -5,4 +5,6 @@ class Message < ActiveRecord::Base
   validates :content, presence: true
   validates :when_message, presence: true
   validates :sender_name, presence: true
+  validates :image, presence: true
+  validates :type_id, presence: true
 end
