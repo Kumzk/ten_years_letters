@@ -1,5 +1,5 @@
 class MessagesController < ApplicationController
-  before_action :set_messages
+  # before_action :set_messages
 
   def show
   end
@@ -35,7 +35,9 @@ class MessagesController < ApplicationController
       :when_message,
       :sender_name,
       :content,
+      :image,
       :user_id,
+      :type_id
     )
   end
 
