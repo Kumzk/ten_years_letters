@@ -1,6 +1,6 @@
 <%= form_for @message do |f| %>
   <div class="field">
-    <%= f.hidden_field :user_id, value: @user.id %>
+    <%= f.hidden_field :user_id, value: current_user.id %>
   </div>
 
   <div class="field">
@@ -11,6 +11,11 @@
   <div class="field">
     <%= f.label '画像' %><br />
     <%= f.file_field :image, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label 'メールアドレス' %><br />
+    <%= f.text_field :email, autofocus: true %>
   </div>
 
   <div class="field">

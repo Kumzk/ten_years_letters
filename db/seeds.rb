@@ -8,6 +8,6 @@
 # userstable seeds
  User.create( email: 'test@gmail.com', password: '111111' ,name: 'test', birthday: '2000-01-01', status: 0 )
 
- Question.create(comtent: 'aaaaaaaaaaaaaa')
- Question.create(comtent: 'bbbbbbbbbbbbbb')
- Question.create(comtent: 'cccccccccccccc')
+ Question.create(content: 'aaaaaaaaaaaaaa')
+ Question.create(content: 'bbbbbbbbbbbbbb')
+ Question.create(content: 'cccccccccccccc')
