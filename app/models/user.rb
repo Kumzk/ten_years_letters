@@ -5,4 +5,6 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   has_many :messages
+  varidetes :name, presence: true
+  varidetes :birthday, presence: true
 end
