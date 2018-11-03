@@ -1,0 +1,16 @@
+<h1>メール一覧</h1>
+<% @messages.each do |message| %>
+  <div class="message-box">
+    <ul>
+      <li><%= image_tag message.image_url(:xs) %></li>
+      <li>送り人<%= message.sender_name %></li>
+      <li>画像<%= message.image %></li>
+      <li>送り先のメアド<%= message.email %></li>
+      <li>いつ送る<%= message.when_message %></li>
+      <li>ステータス　<%= message.status_text %></li>
+      <li><%= link_to '編集', edit_message_path(message.id) %></li>
+      <li><%= link_to '詳細', message_path(message.id) %></li>
+      <li><%= link_to '削除', message_path(message.id), method: :delete %></li>
+    </ul>
+  </div>
+<% end %>
