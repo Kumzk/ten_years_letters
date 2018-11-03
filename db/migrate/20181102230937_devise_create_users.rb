@@ -35,7 +35,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.1]
       ## custom
       t.string :name,           null: false, default: ""
       t.date :birthday
-      t.integer :status
+      t.integer :status,        null: false, default: 0
       t.timestamps null: false
     end
 
