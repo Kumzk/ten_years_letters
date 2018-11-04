@@ -1,9 +1,6 @@
 <div class=input-box>
   <div class=input-form>
     <%= form_for @message do |f| %>
-      <div class="field">
-        <%= f.hidden_field :user_id, value: current_user.id %>
-      </div>
 
       <div class="form-item">
         <h6><%= f.label 'いつ送りますか？' %></h6>
@@ -18,9 +15,15 @@
     </div>
 
     <div class="form-item">
-      <%= f.label '送る人の名前' %><br />
-      <%= f.text_field :name, autofocus: true, placeholder: '〇〇さん', class: 'email-box' %>
+      <%= f.label '宛名' %><br />
+      <%= f.text_field :receiver_name, autofocus: true, placeholder: '〇〇さん', class: 'email-box' %>
     </div>
+
+    <div class="form-item">
+      <%= f.label '差出人' %><br />
+      <%= f.text_field :sender_name, autofocus: true, placeholder: '〇〇さん', class: 'email-box' %>
+    </div>
+    
     <div class="email-form">
       <div class="form_item">
         <%= f.label '送る人のメールアドレス' %><br />
