@@ -1,0 +1,51 @@
+.input-box {
+  height: 100%;
+  background: #F5F0E7;
+  color: #5e5e5e;
+  font: 400 87.5%/1.5em 'Open Sans', sans-serif;
+  background-position: center center;
+  background-image: url(/assets/home.jpg);
+ margin: 0;
+ position:absolute; top:0px;
+ width: 100%;
+ background-size:170% auto;
+ }
+
+input,
+select,
+textarea {
+  background-color: rgba(0, 0, 0, 0) !important;
+  border: none;
+  font-size: 38px;
+}
+.input-form{
+   text-align: center;
+   margin: auto;
+   width: 300px;
+  padding-top: 45px;
+}
+.year{
+  width: 300px;
+  background: #fafafa;
+  border: none;
+  transition: border-color 0.3s;
+  text-align: center;
+}
+.gazou{
+  text-align: center;
+}
+.email-form{
+  margin-bottom: 20px;
+}
+.email-box{
+  width: 400px;
+}
+.email-box:-ms-input-placeholder{
+  text-align: center;
+}
+.answer-box{
+  width: 100%;
+}
+.create-botton{
+  color: #2EA59F;
+}
