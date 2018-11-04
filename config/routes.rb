@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   get 'classification', to: 'top#classification'
   resources :messages do
-    collection do
+    member do
       get :complete
     end
   end
