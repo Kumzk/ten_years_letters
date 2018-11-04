@@ -7,6 +7,6 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 # userstable seed
 
- Question.create(content: '大切な新しい命が誕生したとき、頑張ったあなたにどんなことばをかけますか？？')
- Question.create(content: '妊娠おめでとうございます！出産を迎える８か月後のあなたへ今の気持ちを')
- Question.create(content: '今のあなたの夢はなんですか？○○年後に自分にはどうあってほしいですか？')
+ Question.create(content: '7歳を迎えるあなたへのメッセージはなんですか')
+ Question.create(content: '初めて自転車に乗れたあなたに贈る言葉はなんですか')
+ Question.create(content: '生まれて1000日を迎えたあなたへ贈りた言葉はなんですか')

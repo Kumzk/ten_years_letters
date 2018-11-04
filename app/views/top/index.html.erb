@@ -1,2 +1,37 @@
-トップだよ
-<%= link_to'次の画面へ', classification_path %>
+<div class="wrapper">
+    <div class="slideShow">
+      <div class="image">
+        <img src="/assets/future.png" alt="" class="">
+
+      </div>
+      <div class="image">
+        <img src="/assets/lovers.png" alt="" class="">
+
+      </div>
+      <div class="image">
+        <img src="/assets/maternity.png" alt="" class="">
+
+      </div>
+  </div>
+</div>
+<img src="/assets/logo.png" alt="" width="200px" class="logo">
+<%= link_to classification_path do%>
+  <img src="/assets/blueLetter.png" alt="" class="bounce goNext">
+<% end %>
+<h2 class="top-head">Sand Boxは<br>未来の自分，大切な人に<br>メッセージを届けるサービスです。</h2>
+
+<script type="text/javascript">
+
+  $(function(){
+
+    $('.slideShow').slick({
+      autoplaySpeed: 1000,
+      cssEase: 'ease-in-out',
+      autoplay: true,
+      autoplaySpeed: 1000,
+      infinite: true,
+      autoplaySpeed: 3000,
+      speed: 500
+    });
+  });
+</script>
