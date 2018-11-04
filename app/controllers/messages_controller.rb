@@ -22,13 +22,14 @@ class MessagesController < ApplicationController
     @message = Message.new(message_params)
     if @message.save
       MessageMailer.set_complete(@message).deliver
-      redirect_to complete_messages_path
+      redirect_to complete_message_path(@message.id)
     else
       render :new
     end
   end
 
   def complete
+    @message = Message.find(params[:id])
   end
 
 

@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   root to: 'top#index'
   resources :messages do
-    collection do
+    member do
       get :complete
     end
   end

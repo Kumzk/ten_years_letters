@@ -1,1 +1,22 @@
-メッセージの作成がかんりょうしました。
+<body>
+    <div class="complete-wrapper">
+      <div class="complete-content">
+        <h2><%= "あなたのメッセージは#{@message.when_message}にくろちゃんへ届けられます。" %></h2>
+        <h2>次はいつの誰に送りますか？</h2>
+        <a href="myPage.html"><img src="/assets/logo.png" alt=""></a>
+        <i class="far fa-hand-point-left shake" id="appear"><h2 class="complaete-click">クリック</h2></i>
+      </div>
+    </div>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script type="text/javascript">
+    $(function(){
+
+
+        $('#appear').fadeIn(3000);
+
+
+
+    });
+    </script>
+
+  </body>

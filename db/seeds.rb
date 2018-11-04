@@ -5,8 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-# userstable seeds
- User.create( email: 'test@gmail.com', password: '111111' ,name: 'test', birthday: '2000-01-01', status: 0 )
+# userstable seed
 
  Question.create(content: '大切な新しい命が誕生したとき、頑張ったあなたにどんなことばをかけますか？？')
  Question.create(content: '妊娠おめでとうございます！出産を迎える８か月後のあなたへ今の気持ちを')
