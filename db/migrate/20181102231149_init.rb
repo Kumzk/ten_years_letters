@@ -1,6 +1,7 @@
 class Init < ActiveRecord::Migration[5.1]
   create_table :messages do |t|
-    t.string :name, null: false
+    t.string :sender_name, null: false
+    t.string :receiver_name, null: false
     t.text :email, null: false
     t.string :image, null: false
     t.date :when_message, null: false
@@ -10,7 +11,6 @@ class Init < ActiveRecord::Migration[5.1]
 
 
     t.integer :question_id, null: false
-    t.integer :user_id, null: false
     t.timestamps
   end
 

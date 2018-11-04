@@ -1,0 +1,49 @@
+// html,body {
+//   overflow: hidden;
+//   height: 100%;
+//   margin: 0;
+// }
+// div.wrapper {
+//   padding-top: 0;
+//   width: 100%;
+//   height: 100%;
+//   text-align: center;
+// }
+div.section {
+  height: 25%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: table;
+}
+div.to-family {
+  background-image: url(../image/toFamily.jpg);
+  background-position: top;
+}
+div.to-friends {
+  background-image: url(../image/toFriend.jpg);
+}
+div.to-respect {
+  background-image: url(../image/toRespect.jpg);
+}
+div.to-couple {
+  background-image: url(../image/toCouple.jpg);
+  background-position: 25% 25%;
+}
+.bg-blur {
+  background: rgba(255, 255, 255, .2);
+  height: 100%;
+  display: table;
+  width: 100%;
+}
+div.bg-blur>h1 {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: left;
+  padding-left: 100px;
+  color: black;
+  font-family: 'arial unicode ms';
+  font-weight: bold;
+}
