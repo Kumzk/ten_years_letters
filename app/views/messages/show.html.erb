@@ -1,7 +1,42 @@
+<body>
+  <div class="mail">
+    <div class="mail__content">
+        <div class="article mt-5">
+          <h2 class="when"><%= "From :  #{@message.created_at.strftime("%Y-%m-%d")}"%></h2>
+          <h2 class="who japanese"><%= "の#{@message.sender_name}" %></h2>
+        </div>
+        <div class="article">
+          <h2 class="when"><%="Dear : #{@message.when_message.strftime("%Y-%m-%d")}" %></h2>
+          <h2 class="who japanese"><%= "の#{@message.receiver_name}" %></h2>
+        </div>
+        <div class="article">
+          <h2 class="question japanese mt-5"><%= "#{@message.created_at.year}年の#{@message.sender_name}さんからの質問です。覚えていますか？"%></h2>
+          <h2 class="question japanese"><%= "#{@message.question.content}" %></h2>
+          <div class="arrow" id="goTo"></div>
+        </div>
+    </div>
+    <div class="main-letter">
+      <div class="answer">
+        <h2 class="japanese"><%= "#{@message.created_at.year}年の質問の回答"%></h4>
+        <h2 class="message japanese"><%="#{@message.answer1}"%></h2>
+        <p class="japanese mt-5">昔のあなたからのメッセージです。</p>
+        <p class="message japanese"><%="#{@message.answer2}"%></p>
+      </div>
+    </div>
+    <div class="row">
+      <%= image_tag @message.image_url(:md), class:'show-img'%>
+    </div>
+  </div>
+</body>
+<script type="text/javascript">
+$(function(){
+  $('#goTo').click(function(){
+    $('html,body').animate({
+      'scrollTop': 1000
+    }, 'slow');
+  });
 
-<div class="message-box">
-  <ul>
-    <li><%= image_tag @message.image_url(:xs) %></li>
-    <li>送り先のメアド<%= @message.email %></li>
-  </ul>
-</div>
+
+
+});
+</script>
