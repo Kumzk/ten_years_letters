@@ -6,7 +6,7 @@
       </div>
 
       <div class="form-item">
-        <h4><%= f.label 'いつ送りますか？' %></h4><br />
+        <h6><%= f.label 'いつ送りますか？' %></h6>
         <%= f.date_field :when_message, autofocus: true , class: "year",  value: "2000-01-01"%>
       </div>
 
@@ -21,11 +21,12 @@
       <%= f.label '送る人の名前' %><br />
       <%= f.text_field :name, autofocus: true, placeholder: '〇〇さん', class: 'email-box' %>
     </div>
-
-      <div class="field">
+    <div class="email-form">
+      <div class="form_item">
         <%= f.label '送る人のメールアドレス' %><br />
         <%= f.text_field :email, autofocus: true, placeholder: 'sample@gmail.com', class: 'email-box' %>
       </div>
+    </div>
 
       <div class="field">
         <h6><%= f.label '質問項目' %></h6>
@@ -38,10 +39,10 @@
       </div>
 
       <div class="field">
-        <%= f.label '内容' %><br />
-        <%= f.text_area :answer2, autofocus: true, rows: 5 %>
+        <%= f.label '自由に記述してください' %><br />
+        <%= f.text_area :answer2, autofocus: true, rows: 5, class: 'answer-box' %>
       </div>
-      <%= f.submit%>
+      <%= f.submit class: "create-botton btn btn-info "%>
     <% end %>
   </div>
 </div>

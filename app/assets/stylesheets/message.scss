@@ -8,7 +8,7 @@
  margin: 0;
  position:absolute; top:0px;
  width: 100%;
- background-size:150% auto;
+ background-size:170% auto;
  }
 
 input,
@@ -21,9 +21,8 @@ textarea {
 .input-form{
    text-align: center;
    margin: auto;
-   margin-top: 100px;
    width: 300px;
-
+  padding-top: 45px;
 }
 .year{
   width: 300px;
@@ -35,9 +34,18 @@ textarea {
 .gazou{
   text-align: center;
 }
+.email-form{
+  margin-bottom: 20px;
+}
 .email-box{
   width: 400px;
 }
+.email-box:-ms-input-placeholder{
+  text-align: center;
+}
 .answer-box{
   width: 100%;
+}
+.create-botton{
+  color: #2EA59F;
 }
