@@ -20,6 +20,7 @@ class MessagesController < ApplicationController
   end
 
   def create
+    binding.pry
     @message = Message.new(message_params)
     if @message.save
       MessageMailer.set_complete(@message).deliver
