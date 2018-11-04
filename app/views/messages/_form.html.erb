@@ -1,53 +1,45 @@
 <form class="form-inline">
-<div class=input-box>
-  <div class=input-form>
-    <%= form_for @message do |f| %>
-    <div class="form__groups">
-        <div class="form-group">
-          <h6><%= f.label 'いつ送りますか？' %></h6>
-          <%= f.date_field :when_message, autofocus: true , class: " group-control year",  value: "2000-01-01"%>
-        </div>
-
-        <div class="form-group form-group-sm">
+  <div class=input-box>
+    <div class=input-form>
+      <%= form_for @message do |f| %>
+        <div class="form__groups">
+          <div class="form-group">
+            <h6><%= f.label 'いつ送りますか？' %></h6>
+            <%= f.date_field :when_message, autofocus: true , class: " group-control year",  value: "2000-01-01"%>
+          </div>
+          <div class="form-group form-group-sm">
             <h6 class="gazou"><%= f.label '画像を選択してください' %></h6>
             <%= f.file_field :image, autofocus: true, class: 'group-control btn btn-sm btn-info'  ,id: "btn_filename" %>
-      </div>
-      <div class="form-group">
-        <h6><%= f.label '宛名' %></h6>
-        <%= f.text_field :receiver_name, autofocus: true, placeholder: '〇〇', class: 'group-control email-box' %>さんへ
-      </div>
-
-      <div class="form-group">
-        <div class="form-item">
-          <h6><%= f.label '送る人のメールアドレス' %></h6>
-          <%= f.text_field :email, autofocus: true, placeholder: 'sample@gmail.com', class: 'email-box' %>
+          </div>
+          <div class="form-group">
+            <h6><%= f.label '宛名' %></h6>
+            <%= f.text_field :receiver_name, autofocus: true, placeholder: '〇〇', class: 'group-control email-box' %>さんへ
+          </div>
+          <div class="form-group">
+            <div class="form-item">
+              <h6><%= f.label '送る人のメールアドレス' %></h6>
+              <%= f.text_field :email, autofocus: true, placeholder: 'sample@gmail.com', class: 'email-box' %>
+            </div>
+          </div>
+          <div class="form-group">
+            <h6><%= f.label '質問項目' %></h6>
+            <%= f.collection_select(:question_id, Question.all, :id, :content, :prompt => "質問を選択してください") %>
+          </div>
         </div>
-      </div>
-
-      <div class="form-group">
-        <h6><%= f.label '質問項目' %></h6>
-        <%= f.collection_select(:question_id, Question.all, :id, :content, :prompt => "質問を選択してください") %>
-      </div>
-
+        <div class="field">
+          <h6><%= f.label '回答' %></h6>
+          <%= f.text_area :answer1, autofocus: true, rows: 3, class: 'answer-box' %>
+        </div>
+        <div class="field">
+          <h6><%= f.label '自由に記述してください' %></h6>
+          <%= f.text_area :answer2, autofocus: true, rows: 3, class: 'answer-box' %>
+        </div>
+        <div class="form-group">
+          <h6><%= f.label '差出人' %></h6>
+          <%= f.text_field :sender_name, autofocus: true, placeholder: '〇〇', class: 'group-control email-box' %>より
+        </div>
+        <span class="submit__btn"><%= f.submit class: "create-bottun btn btn-info "%></span>
+      <% end %>
     </div>
-
-      <div class="field">
-        <h6><%= f.label '回答' %></h6>
-        <%= f.text_area :answer1, autofocus: true, rows: 3, class: 'answer-box' %>
-      </div>
-
-      <div class="field">
-        <h6><%= f.label '自由に記述してください' %></h6>
-        <%= f.text_area :answer2, autofocus: true, rows: 3, class: 'answer-box' %>
-      </div>
-
-      <div class="form-group">
-        <h6><%= f.label '差出人' %></h6>
-        <%= f.text_field :sender_name, autofocus: true, placeholder: '〇〇', class: 'group-control email-box' %>より
-      </div>
-      <span class="submit__btn"><%= f.submit class: "create-bottun btn btn-info "%></span>
-
-    <% end %>
   </div>
-</div>
 </form>
