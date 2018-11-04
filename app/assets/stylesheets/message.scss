@@ -63,11 +63,12 @@ div.complete-wrapper {
 div.complete-content {
   display: table-cell;
   vertical-align: middle;
-  padding-top: 250px;
+  padding-top: 50px;
 }
 div.complete-content>h2 {
   margin: 40px auto;
   font-weight: bold;
+  margin-bottom: 50px;
 }
 div.complete-content>a>img {
   position: relative;
@@ -91,4 +92,10 @@ h2.complete-click {
   vertical-align: middle;
   font-weight: bold;
   font-size: 50px;
+}
+.you-message{
+  padding-bottom: 150px;
+}
+.home_redirect{
+  width: 300px;
 }
