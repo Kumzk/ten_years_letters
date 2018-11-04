@@ -1,15 +1,27 @@
+.form-group {
+  display: flex;
+  justify-content: space-around;
+}
+.form__groups{
+  display: flex;
+  flex-direction: column;
+}
 .input-box {
   height: 100%;
   background: #F5F0E7;
   color: #5e5e5e;
   font: 400 87.5%/1.5em 'Open Sans', sans-serif;
-  background-position: center center;
   background-image: url(/assets/home.jpg);
+  background-position: center center;
  margin: 0;
  position:absolute; top:0px;
  width: 100%;
  background-size:170% auto;
  }
+
+.field, .form-group {
+  margin: 1.5rem 0;
+}
 
 input,
 select,
@@ -17,11 +29,17 @@ textarea {
   background-color: rgba(0, 0, 0, 0) !important;
   border: none;
   font-size: 38px;
+  border: 1px solid #5e5e5e;
+  margin: 1rem auto;
+}
+
+
+input {
+  margin-right: 0;
 }
 .input-form{
-   text-align: center;
    margin: auto;
-   width: 300px;
+   width: 600px;
   padding-top: 45px;
 }
 .year{
@@ -39,15 +57,13 @@ textarea {
 }
 .email-box{
   width: 400px;
+  height: 1rem;
 }
 .email-box:-ms-input-placeholder{
   text-align: center;
 }
 .answer-box{
   width: 100%;
-}
-.create-botton{
-  color: #2EA59F;
 }
 div.complete-wrapper {
   width: 100%;
@@ -98,4 +114,10 @@ h2.complete-click {
 }
 .home_redirect{
   width: 300px;
+}
+
+.submit__btn {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
 }
