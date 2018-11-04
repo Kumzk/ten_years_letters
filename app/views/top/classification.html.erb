@@ -1,0 +1,56 @@
+<div class="wrapper">
+  <div class="my-page d-flex justify-content-center flex-column justify-content-center">
+    <div class="content">
+      <h2 class="my-page-head">
+        未来のあなたや大切な人に<br />
+        素敵なメッセージを送りましょう。
+      </h2>
+      <div class="row">
+        <div class="offset-md-2 col-md-8">
+          <div class="row mr-2">
+            <div class="col-md-3">
+              <%= link_to new_message_path do%>
+                <div class="card img-thumbnail">
+                  <img class="card-img-top" src="/assets/family.jpg" alt="画像">
+                  <div class="card-body px-2 py-3">
+                    <h5 class="card-title">家族</h5>
+                  </div><!-- /.card-body -->
+                </div>
+              <% end %>
+            </div>
+            <div class="col-md-3">
+              <%= link_to new_message_path do%>
+                <div class="card img-thumbnail">
+                  <img class="card-img-top" src="/assets/fliend.jpg" alt="画像">
+                  <div class="card-body px-2 py-3">
+                    <h5 class="card-title">友達</h5>
+                  </div><!-- /.card-body -->
+                </div><!-- /.card -->
+              <% end %>
+            </div>
+            <div class="col-md-3">
+              <%= link_to new_message_path do%>
+                <div class="card img-thumbnail">
+                  <img class="card-img-top" src="/assets/important.jpg" alt="画像">
+                  <div class="card-body px-2 py-3">
+                    <h5 class="card-title">大切な人</h5>
+                  </div><!-- /.card-body -->
+                </div>
+              <% end %><!-- /.card -->
+            </div>
+            <div class="col-md-3">
+              <%= link_to new_message_path do%>
+                <div class="card img-thumbnail">
+                  <img class="card-img-top" src="/assets/me.jpg" alt="画像">
+                  <div class="card-body px-2 py-3">
+                    <h5 class="card-title">自分に</h5>
+                  </div><!-- /.card-body -->
+                </div>
+              <% end %><!-- /.card -->
+            </div>
+          </div>
+        </div>
+      </div><!-- /.row -->
+    </div>
+  </div>
+</div>
