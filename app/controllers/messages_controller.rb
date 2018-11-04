@@ -38,6 +38,7 @@ class MessagesController < ApplicationController
       :email,
       :when_message,
       :sender_name,
+      :receiver_name,
       :content,
       :image,
       :user_id,

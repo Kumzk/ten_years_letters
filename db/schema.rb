@@ -13,6 +13,8 @@
 ActiveRecord::Schema.define(version: 20181102231149) do
 
   create_table "messages", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string "sender_name", null: false
+    t.string "receiver_name", null: false
     t.text "email", null: false
     t.string "image", null: false
     t.date "when_message", null: false
@@ -20,7 +22,6 @@ ActiveRecord::Schema.define(version: 20181102231149) do
     t.text "answer1", null: false
     t.text "answer2", null: false
     t.integer "question_id", null: false
-    t.integer "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

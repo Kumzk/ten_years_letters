@@ -1,11 +1,9 @@
 <div class="wrapper">
   <div class="my-page d-flex justify-content-center flex-column justify-content-center">
     <div class="content">
-      <h2 class="my-5"><%= "#{@user.name}さん" %></h2>
-        <h2 class="my-5"><%= "あなたが生まれてから#{@date}日がたちました。" %></h2>
-        <h2 class="my-page-head">未来のあなたや大切な人にメッセージを送りましょう。</h2>
-      <%= link_to'あなたへ贈る', new_message_path(@user.id), class:'button btn-space' %>
-      <%= link_to'大切な人に贈る', new_message_path(@user.id), class:'button btn-space'%>
+      <h2 class="my-page-head">未来のあなたや大切な人にメッセージを送りましょう。</h2>
+      <%= link_to'あなたへ贈る', new_message_path, class:'button btn-space' %>
+      <%= link_to'大切な人に贈る', new_message_path, class:'button btn-space'%>
     </div>
   </div>
 </div>
