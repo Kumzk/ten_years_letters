@@ -2,7 +2,7 @@
     <div class="complete-wrapper">
       <div class="complete-content">
       <div class="you-message">
-        <h2 ><%= "あなたのメッセージは#{@message.when_message}にくろちゃんへ届けられます。" %></h2></ <br>
+        <h2 ><%= "あなたのメッセージは#{@message.when_message}に#{@message.receiver_name}さんへ届けられます。" %></h2></ <br>
         <h2>次はいつの誰に送りますか？</h2>
       </div>
            <%= link_to image_tag('/assets/logo.png'), classification_path  %>
